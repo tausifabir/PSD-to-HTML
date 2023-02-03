@@ -1,0 +1,113 @@
+/*===================================
+	Common CSS
+====================================*/
+body{
+	color: #666666;
+	font-family: Georgia, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 960px;
+	width: 96%;
+}
+
+image{
+	max-width: 100%;
+	height: auto;
+}
+
+/*===================================
+	Top Header CSS
+====================================*/
+
+.header_area{
+	width: 100%;
+	clear: both;
+}
+
+#top_header_area{
+	background-color: #ba2e1f;
+	padding: 15px 0;
+	width: 100%;
+
+}
+
+.inner_top_header{
+	overflow: hidden;
+}
+
+.mini_menu{
+	padding-top: 5px;
+	float: left;
+	width: 70%;
+}
+
+.mini_menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.mini_menu ul li{ 
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+}
+
+.mini_menu ul li::after{ 
+	position: absolute;
+	content: "";
+	margin-right: 6px;
+	background-color: #fff;
+	top: 5px;
+	right: -15px;
+	width: 1px;
+	height: 12px;
+}
+.mini_menu ul li:last-child:after{ 
+	display: none;
+}
+
+.mini_menu ul li a{
+	color: #ffffff;
+	display: block;
+	user-select: none;
+	text-decoration: none;
+}
+
+.mini_menu ul li a:hover{
+	color: #ddd;
+}
+
+.search_area{ 
+	float: right;
+	width: 30%;
+}
+
+.search_area form{ 
+	background-color: #fff;
+	border-radius: 25px;
+	float: right;
+	max-width: 210px;
+	width: 96%;
+	padding: 2%;
+}
+
+.search_area input{ 
+	border: 0px solid;
+	width: 75%;
+	padding: 1%;
+	color: #000000;
+	float: left;
+}
+
+.search_area input[type="submit"]{ 
+	background: url(img/search.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	width: 23%;
+}
