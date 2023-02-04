@@ -6,7 +6,7 @@ body{
 	font-family: Georgia, sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
-
+	margin: 0;
 }
 
 .container{
@@ -105,9 +105,91 @@ image{
 	float: left;
 }
 
-.search_area input[type="submit"]{ 
-	background: url(img/search.jpg);
-	background-repeat: no-repeat;
-	background-position: right;
+.search_area input[type="submit"]{
+	background: url(img/search.jpg) no-repeat right;
+	/* replace my shorthanded*/
+	/*background-repeat: no-repeat;
+	background-position: right;*/
 	width: 23%;
+	cursor: pointer;
+}
+
+/*===================================
+	Main Header CSS
+====================================*/
+
+#main_header_area{
+	width: 100%;
+	clear: both;
+}
+
+.inner_header{
+	padding: 40px 0;
+	overflow: hidden;
+}
+
+.logo_area{
+	float:left;
+	width: 240px;
+}
+
+.social_area{
+	padding-top: 20px;
+	float: right;
+	max-width: 700px;
+	width: 100%;
+}
+
+.social_area ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+.social_area ul li{
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.social_area ul li a{
+	display: block;
+	text-decoration: none;
+}
+
+.social_area ul li a i{
+	background-color: #333333;
+	border-radius: 50%;
+	display: block;
+	text-decoration: none;
+	width: 35px;
+	padding-top: 8px;
+	color: #fff;
+	height: 25px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.social_area ul li a:hover i{
+	background-color: #ba2e1f;
+}
+
+.social_area ul li a:hover i.fa-linkedin-in{
+	background: #017480;
+}
+
+.social_area ul li a:hover i.fa-twitter{
+	background: #41B7E5;
+}
+
+.social_area ul li a:hover i.fa-pinterest{
+	background: #DE2A32;
+}
+
+.social_area ul li a:hover i.fa-google-plus-g{
+	background: #D64134;
+}
+
+.social_area ul li a:hover i.fa-rss{
+	background: #ee802f;
 }
